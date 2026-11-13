@@ -1,0 +1,16 @@
+describe('Caso 18 - Produtos por categoria', () => {
+  it('Navega pelas subcategorias Women - Tops e Men - Tshirts', () => {
+    cy.abrirInicio()
+    cy.get('.left-sidebar .panel-group').should('be.visible')
+    cy.get('a[href="#Women"]').click()
+    cy.contains('#Women a', 'Tops').should('be.visible').click()
+    cy.location('pathname').should('eq', '/category_products/2')
+    cy.contains('h2.title', 'Women - Tops Products').should('be.visible')
+    cy.get('.features_items .product-image-wrapper').should('have.length.greaterThan', 0)
+    cy.get('a[href="#Men"]').click()
+    cy.contains('#Men a', 'Tshirts').should('be.visible').click()
+    cy.location('pathname').should('eq', '/category_products/3')
+    cy.contains('h2.title', 'Men - Tshirts Products').should('be.visible')
+    cy.get('.features_items .product-image-wrapper').should('have.length.greaterThan', 0)
+  })
+})

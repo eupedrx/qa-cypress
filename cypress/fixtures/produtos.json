@@ -1,0 +1,15 @@
+{
+  "primeiro": {
+    "id": 1,
+    "nome": "Blue Top",
+    "preco": 500,
+    "categoria": "Women > Tops",
+    "marca": "Polo"
+  },
+  "segundo": {
+    "id": 2,
+    "nome": "Men Tshirt",
+    "preco": 400
+  },
+  "busca": "Blue Top"
+}

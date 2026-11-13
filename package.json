@@ -1,0 +1,20 @@
+{
+  "name": "qa-cypress",
+  "version": "1.0.0",
+  "description": "Trabalho final: 10 cenários do Automation Exercise com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --browser electron",
+    "cypress:open": "cypress open --browser brave",
+    "cypress:run": "cypress run --browser brave",
+    "test:open": "cypress open",
+    "package": "node scripts/package.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^16.2.1"
+  }
+}
