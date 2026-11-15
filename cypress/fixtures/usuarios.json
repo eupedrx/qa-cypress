@@ -1,0 +1,6 @@
+{
+  "invalido": {
+    "email": "usuario.inexistente.cypress@example.com",
+    "senha": "senhaIncorreta123"
+  }
+}
